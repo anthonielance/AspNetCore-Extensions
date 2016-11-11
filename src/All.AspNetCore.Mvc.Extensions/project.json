@@ -1,13 +1,28 @@
-﻿{
-  "version": "1.0.0-*",
+{
+  "version": "1.0.0-rc",
+  "authors": [ "Anthonie Lance" ],
+  "packOptions": {
+    "owners": [ "Anthonie Lance" ],
+    "licenseUrl": "https://opensource.org/licenses/MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/anthonielance/AspNetCore-Extensions"
+    }
+  },
+  "description": "Set of extension methods for ASP.NET Core MVC",
+  "copyright": "2016",
 
   "dependencies": {
-    "NETStandard.Library": "1.6.0"
+    "Microsoft.AspNetCore.Mvc.Core": "1.0.1",
+    "Microsoft.AspNetCore.Mvc.Razor": "1.0.1"
   },
 
   "frameworks": {
-    "netstandard1.6": {
-      "imports": "dnxcore50"
+    "netcoreapp1.0": {
+      "imports": [
+        "dotnet5.6",
+        "portable-net45+win8"
+      ]
     }
   }
 }
